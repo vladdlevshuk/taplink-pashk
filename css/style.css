@@ -14,7 +14,7 @@
 .introduction-title {
   text-align: center;
   font-family: Philosopher;
-  font-size: 24px;
+  font-size: 32px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -22,7 +22,7 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  max-width: 106px;
+  max-width: 140px;
   margin: 0 auto;
 }
 
@@ -31,7 +31,7 @@
 }
 
 .introduction-card {
-  max-width: 203px;
+  max-width: 303px;
   border-radius: 6px;
   border: 1px solid #006593;
   background: linear-gradient(180deg, #02314F 0%, #161616 100%);
@@ -54,7 +54,7 @@
   justify-content: center;
   align-items: center;
   font-family: Philosopher;
-  font-size: 16px;
+  font-size: 22px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -65,7 +65,7 @@
 }
 
 .introduction-card__text-little {
-  font-size: 8px;
+  font-size: 13px;
   background: linear-gradient(180deg, #FFCC97 49.48%, rgba(255, 204, 151, 0.00) 100%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -81,14 +81,16 @@
 }
 
 .about-container {
-    padding-bottom: 6px;
+  padding-bottom: 6px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .section-title {
   color: #AA0060;
   text-align: center;
   font-family: Philosopher;
-  font-size: 20px;
+  font-size: 28px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -99,7 +101,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 203px;
+  max-width: 303px;
   border-radius: 6px;
   border: 1px solid rgba(0, 101, 147, 0.10);
   background: linear-gradient(180deg, #02314F 0%, #161616 100%);
@@ -111,7 +113,7 @@
 
 .about-card__text {
   font-family: Montserrat;
-  font-size: 8px;
+  font-size: 13px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -125,12 +127,12 @@
   color: #FFF;
   text-align: center;
   font-family: Montserrat Alternates;
-  font-size: 6px;
+  font-size: 10px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  width: 78px;
-  height: 19.024px;
+  width: 110px;
+  height: 35px;
   flex-shrink: 0;
   border-radius: 6px;
   background: linear-gradient(180deg, #A8005F 0%, #6A053F 100%);
@@ -155,7 +157,7 @@
 .brands-logos__image {
   max-width: 229px;
   display: grid;
-  gap: 10px;
+  gap: 25px;
   grid-template-columns: repeat(2, 1fr);
 }
 
