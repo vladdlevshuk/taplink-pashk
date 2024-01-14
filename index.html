@@ -13,6 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Forum&family=Inter&family=PT+Sans&family=Philosopher:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@400;600;700&family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="site-container">
@@ -144,6 +145,136 @@
             <button class="services-card__button">Записаться</button>
           </div>
         </div>
+      </div>
+    </section>
+    <section class="faq">
+      <div class="faq-container">
+        <h2 class="section-title faq-title">FAQ</h2>
+        <div class="faq-content">
+          <div class="faq-content__item">
+            <div class="faq-content__item-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none">
+                <rect x="3" width="3" height="9" rx="1" fill="white"/>
+                <rect x="9" y="3" width="3" height="9" rx="1" transform="rotate(90 9 3)" fill="white"/>
+              </svg>
+            </div>
+            <div class="faq-content__item-text">Сколько длится консультация?</div>
+          </div>
+          <div class="faq-content__item">
+            <div class="faq-content__item-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="9" height="3" viewBox="0 0 9 3" fill="none">
+                <rect x="9" width="3" height="9" rx="1" transform="rotate(90 9 0)" fill="white"/>
+              </svg>
+            </div>
+            <div class="faq-content__item-text">Как я могу оплатить?</div>
+          </div>
+          <div class="faq-content__item-text answer">Ответ: наличный и без наличный расчет.</div>
+          <div class="faq-content__item">
+            <div class="faq-content__item-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none">
+                <rect x="3" width="3" height="9" rx="1" fill="white"/>
+                <rect x="9" y="3" width="3" height="9" rx="1" transform="rotate(90 9 3)" fill="white"/>
+              </svg>
+            </div>
+            <div class="faq-content__item-text">Какую услугу мне выбрать?</div>
+          </div>
+          <div class="faq-content__item">
+            <div class="faq-content__item-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none">
+                <rect x="3" width="3" height="9" rx="1" fill="white"/>
+                <rect x="9" y="3" width="3" height="9" rx="1" transform="rotate(90 9 3)" fill="white"/>
+              </svg>
+            </div>
+            <div class="faq-content__item-text">Можем ли мы встретится офлайн?</div>
+          </div>
+          <div class="faq-content__item">
+            <div class="faq-content__item-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none">
+                <rect x="3" width="3" height="9" rx="1" fill="white"/>
+                <rect x="9" y="3" width="3" height="9" rx="1" transform="rotate(90 9 3)" fill="white"/>
+              </svg>
+            </div>
+            <div class="faq-content__item-text">Зачем мне развивать аккаунт в Рилс И Тикток?</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="review">
+      <div class="review-container">
+        <h2 class="section-title review-title">Отзывы</h2>
+        <div class="review-slider">
+          <div class="review-slides">
+            <div class="review-slide first"></div>
+            <div class="review-slide second"></div>
+            <div class="review-slide third"></div>
+            <div class="review-slide fourth"></div>
+            <div class="review-slide fifth"></div>
+            <div class="review-slide sixth"></div>
+            <div class="review-slide seventh"></div>
+            <div class="review-slide eighth"></div>
+            <div class="review-slide nineth"></div>
+            <div class="review-slide tenth"></div>
+          </div>
+          <div class="review-controls">
+            <button class="review-prev-btn" onclick="prevReviewSlide()">
+              <img src="./src/img/prev.png" alt="Previous button" width="40" height="40">
+            </button>
+            <button class="review-next-btn" onclick="nextReviewSlide()">
+              <img src="./src/img/next.png" alt="Next button" width="40" height="40">
+            </button>
+          </div>
+        </div>
+        <div class="review-pagination"></div>
+      </div>
+    </section>
+    <section class="socials">
+      <div class="socials-container">
+        <h2 class="section-title socials-title">Остались Вопросы?</h2>
+        <div class="socials-after-title">Пишите!</div>
+        <div class="socials-list">
+          <a href="https://www.viber.com" class="socials-list__item viber">
+            <div class="socials-list__item-wrap viber">
+              <div class="socials-list__item-icon viber">
+                <img src="/src/img/viber.png" alt="Viber icon" width="20px" height="20px">
+              </div>
+              <div class="socials-list__item-text">Перейти в Viber</div>
+            </div>
+          </a>
+          <a href="https://t.me/yuliyapashk" class="socials-list__item telegram">
+            <div class="socials-list__item-wrap telegram">
+              <div class="socials-list__item-icon telegram">
+                <img src="/src/img/telegram.png" alt="Telegram icon" width="20px" height="20px">
+              </div>
+              <div class="socials-list__item-text">Перейти в Telegram</div>
+            </div>
+          </a>
+          <a href="https://www.instagram.com/yuliyapashk/" class="socials-list__item instagram">
+            <div class="socials-list__item-wrap instagram">
+              <div class="socials-list__item-icon instagram">
+                <img src="/src/img/inst.png" alt="Instagram icon" width="20px" height="20px">
+              </div>
+              <div class="socials-list__item-text">Перейти в Instagram</div>
+            </div>
+          </a>
+        </div>
+        <div class="socials-subscribe-title">Подписывайся на мои соц. сети</div>
+        <div class="subscribe-list">
+          <a href="#" class="subscribe-list__item tiktok">
+            <div class="subscribe-list__item-wrap tiktok">
+              <div class="subscribe-list__item-icon tiktok">
+                <img src="/src/img/tiktok.png" alt="Tiktok icon" width="40px" height="40px">
+              </div>
+              <div class="subscribe-list__item-text">TikTok</div>
+            </div>
+          </a>
+          <a href="https://www.instagram.com/yuliyapashk/" class="subscribe-list__item inst">
+            <div class="subscribe-list__item-wrap inst">
+              <div class="subscribe-list__item-icon inst">
+                <img src="/src/img/inst2.png" alt="Instagram icon" width="40px" height="40px">
+              </div>
+              <div class="subscribe-list__item-text">Instagram</div>
+            </div>
+          </a>
       </div>
     </section>
   </div>

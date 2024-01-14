@@ -180,32 +180,20 @@ body {
   padding-bottom: 20px;
 }
 
-.slider {
-  overflow: hidden;
-  position: relative;
-  max-width: 330px;
-  border-radius: 6px;
-  margin: 0 auto;
-  border-radius: 6px;
-  background: linear-gradient(180deg, #8B0852 0%, #271821 100%);
-  box-shadow: 0px 0px 4px 0px #006593;
-}
-
-.slides {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-  border-radius: 6px;
-}
-
-.slide {
+.slide,
+.review-slide {
   min-width: 100%;
   height: 500px;
   box-sizing: border-box;
   text-align: center;
   padding: 20px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.slide-text {
+.slide-text,
+.review-slide-text {
   font-family: Montserrat;
   font-size: 13px;
   font-style: normal;
@@ -217,7 +205,8 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-.controls {
+.controls,
+.review-controls {
   position: absolute;
   top: 50%;
   width: 100%;
@@ -226,13 +215,15 @@ body {
   transform: translateY(-50%);
 }
 
-.pagination {
+.pagination,
+.review-pagination {
   text-align: center;
   margin-top: 10px;
   pointer-events: none;
 }
 
-.pagination button {
+.pagination button,
+.review-pagination button {
   cursor: pointer;
   width: 15px;
   height: 3px;
@@ -242,14 +233,17 @@ body {
   margin: 0 4px;
 }
 
-.pagination button.active {
+.pagination button.active,
+.review-pagination button.active {
   cursor: default;
   background-color: rgba(200, 200, 200, 0.4);
   transform: scale(1.1);
 }
 
 .prev-btn,
-.next-btn {
+.next-btn,
+.review-prev-btn,
+.review-next-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -263,16 +257,29 @@ body {
 }
 
 .prev-btn:active,
-.next-btn:active {
+.next-btn:active,
+.review-prev-btn:active,
+.review-next-btn:active {
   transform: scale(1.05);
 }
 
-.slide {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.slider,
+.review-slider {
+  overflow: hidden;
+  position: relative;
+  max-width: 330px;
+  border-radius: 6px;
+  margin: 0 auto;
+  background: linear-gradient(180deg, #8B0852 0%, #271821 100%);
+  box-shadow: 0px 0px 4px 0px #006593;
 }
 
+.slides,
+.review-slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  border-radius: 6px;
+}
 .slide.first {
   background-image: url('/src/img/case1.jpg');
 }
@@ -399,4 +406,234 @@ body {
 
 .services-card__alert.accaunt-alert {
   font-size: 20px;
+}
+
+.faq-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  background: url(/src/img/faq.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.faq-content .faq-content__item-text.answer {
+  margin-top: -5px;
+}
+
+.faq-content__item {
+  display: flex;
+  gap: 10px;
+}
+
+.faq-content__item-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.faq-container {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.faq-content__item-text.answer {
+  font-size: 12px;
+  margin-left: 19px;
+}
+
+.review-container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.review-slide.first {
+  background-image: url('/src/img/rev1.jpg');
+}
+
+.review-slide.second {
+  background-image: url('/src/img/rev2.jpg');
+}
+
+.review-slide.third {
+  background-image: url('/src/img/rev3.jpg');
+}
+
+.review-slide.fourth {
+  background-image: url('/src/img/rev4.jpg');
+}
+
+.review-slide.fifth {
+  background-image: url('/src/img/rev5.jpg');
+}
+
+.review-slide.sixth {
+  background-image: url('/src/img/rev6.jpg');
+}
+
+.review-slide.seventh {
+  background-image: url('/src/img/rev7.jpg');
+}
+
+.review-slide.eighth {
+  background-image: url('/src/img/rev8.jpg');
+}
+
+.review-slide.nineth {
+  background-image: url('/src/img/rev9.jpg');
+}
+
+.review-slide.tenth {
+  background-image: url('/src/img/rev10.jpg');
+}
+
+.socials-container {
+  padding-left: 20px;
+  padding-right: 20px;
+  background: linear-gradient(180deg, #000116 0%, #FFF 100%);
+  background-image: url('/src/img/likes.png');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain;
+  padding-bottom: 40px;
+}
+
+.socials-after-title {
+  color: #FFF;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.socials-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials-list__item {
+  width: 220px;
+  border-radius: 20px;
+  border: none;
+  color: #FFF;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+}
+
+.socials-list__item.viber {
+  background: #8E24AA;
+}
+
+.socials-list__item.telegram {
+  background: #1990CF;
+}
+
+.socials-list__item.instagram {
+  background: #7D32F9;
+}
+
+.socials-list__item-wrap {
+  display: flex;
+}
+
+.socials-list__item-wrap.viber {
+  gap: 35px;
+}
+
+.socials-list__item-wrap.telegram {
+  gap: 25px;
+}
+
+.socials-list__item-wrap.instagram {
+  gap: 23px;
+}
+
+.socials-list__item-icon,
+.socials-list__item-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials-list__item-icon {
+  padding-left: 5px;
+}
+
+.socials-subscribe-title {
+  color: #FFF;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.subscribe-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe-list__item {
+  width: 190px;
+  border-radius: 20px;
+  border: none;
+  color: #FFF;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+}
+
+.subscribe-list__item.tiktok {
+  background: linear-gradient(180deg, #282828 0%, #1A1A1A 100%);
+}
+
+.subscribe-list__item.inst {
+  background: linear-gradient(180deg, #9548B4 28.12%, #FF9549 100%);
+}
+
+.subscribe-list__item-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.subscribe-list__item-wrap.tiktok {
+  gap: 40px;
+}
+
+.subscribe-list__item-wrap.inst {
+  gap: 28px;
 }
