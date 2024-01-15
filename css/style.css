@@ -225,7 +225,7 @@ body {
 .pagination button,
 .review-pagination button {
   cursor: pointer;
-  width: 15px;
+  width: 10px;
   height: 3px;
   background-color: rgba(200, 200, 200, 0.2);
   border-radius: 100px;
@@ -456,43 +456,43 @@ body {
 }
 
 .review-slide.first {
-  background-image: url('/src/img/rev1.jpg');
+  background-image: url("./src/img/rev1.jpg");
 }
 
 .review-slide.second {
-  background-image: url('/src/img/rev2.jpg');
+  background-image: url('/taplink-pashk/src/img/rev2.jpg');
 }
 
 .review-slide.third {
-  background-image: url('/src/img/rev3.jpg');
+  background-image: url('/taplink-pashk/src/img/rev3.jpg');
 }
 
 .review-slide.fourth {
-  background-image: url('/src/img/rev4.jpg');
+  background-image: url('/taplink-pashk/src/img/rev4.jpg');
 }
 
 .review-slide.fifth {
-  background-image: url('/src/img/rev5.jpg');
+  background-image: url('/taplink-pashk/src/img/rev5.jpg');
 }
 
 .review-slide.sixth {
-  background-image: url('/src/img/rev6.jpg');
+  background-image: url('/taplink-pashk/src/img/rev6.jpg');
 }
 
 .review-slide.seventh {
-  background-image: url('/src/img/rev7.jpg');
+  background-image: url('/taplink-pashk/src/img/rev7.jpg');
 }
 
 .review-slide.eighth {
-  background-image: url('/src/img/rev8.jpg');
+  background-image: url('/taplink-pashk/src/img/rev8.jpg');
 }
 
 .review-slide.nineth {
-  background-image: url('/src/img/rev9.jpg');
+  background-image: url('/taplink-pashk/src/img/rev9.jpg');
 }
 
 .review-slide.tenth {
-  background-image: url('/src/img/rev10.jpg');
+  background-image: url('/taplink-pashk/src/img/rev10.jpg');
 }
 
 .socials-container {
@@ -636,4 +636,16 @@ body {
 
 .subscribe-list__item-wrap.inst {
   gap: 28px;
+}
+
+.faq-content__item-text.answer.hidden {
+  display: none;
+}
+
+.faq-content__item-icon.plus.hidden {
+  display: none;
+}
+
+.faq-content__item-icon.minus.hidden {
+  display: none;
 }
