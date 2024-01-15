@@ -256,7 +256,7 @@ body {
 .pagination-button,
 .review-pagination-button {
   cursor: pointer;
-  width: 8px;
+  width: 12px;
   height: 3px;
   background-color: rgba(200, 200, 200, 0.2);
   border-radius: 100px;
