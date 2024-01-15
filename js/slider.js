@@ -14,8 +14,8 @@ function updatePagination() {
     const button = document.createElement('button');
     button.onclick = () => goToSlide(index);
     paginationContainer.appendChild(button);
+    button.classList.add('pagination-button');
   });
-
   paginationContainer.childNodes[currentIndex].classList.add('active');
 }
 
@@ -55,6 +55,7 @@ function updateReviewPagination() {
     const button = document.createElement('button');
     button.onclick = () => goToReviewSlide(index);
     reviewPaginationContainer.appendChild(button);
+    button.classList.add('review-pagination-button');
   });
 
   reviewPaginationContainer.childNodes[currentReviewIndex].classList.add('active');

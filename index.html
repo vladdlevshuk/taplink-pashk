@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Юлия Пашкевич</title>
   <link rel="icon" type="image/" href="">
   <link rel="stylesheet" href="./css/normalize.css">
@@ -21,7 +21,9 @@
     <section class="introduction">
       <div class="introduction-container">
         <h1 class="introduction-title">Юлия Пашкевич</h1>
-        <div class="introduction-empty"></div>
+        <div class="introduction-img-continer">
+          <img src="./src/img/introduction-img.jpg" alt="">
+        </div>
         <div class="introduction-card">
           <div class="introduction-card__top-text">
             <div class="introduction-card__text-block niches">30+ <span class="introduction-card__text-little">Ниш</span></div>
@@ -98,7 +100,9 @@
             </div>
           </div>
         </div>
-        <div class="brands-empty"></div>
+        <div class="brands-img-continer">
+          <img src="./src/img/brands-img.jpg" alt="">
+        </div>
       </div>
     </section>
     <section class="cases">
@@ -120,10 +124,10 @@
           </div>
           <div class="controls">
             <button class="prev-btn" onclick="prevSlide()">
-              <img src="./src/img/prev.png" alt="Previous button" width="40" height="40">
+              <img src="./src/img/prev.png" alt="Previous button" width="60" height="60">
             </button>
             <button class="next-btn" onclick="nextSlide()">
-              <img src="./src/img/next.png" alt="Next button" width="40" height="40">
+              <img src="./src/img/next.png" alt="Next button" width="60" height="60">
             </button>
           </div>
         </div>
@@ -198,28 +202,28 @@
         <div class="faq-content">
           <div class="faq-content__item">
             <div class="faq-content__item-icon plus" onclick="toggleAnswer(this)">
-              <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 9 9" fill="none">
                 <rect x="3" width="3" height="9" rx="1" fill="white"/>
                 <rect x="9" y="3" width="3" height="9" rx="1" transform="rotate(90 9 3)" fill="white"/>
               </svg>
             </div>
             <div class="faq-content__item-icon minus hidden" onclick="toggleAnswer(this)">
-              <svg xmlns="http://www.w3.org/2000/svg" width="9" height="3" viewBox="0 0 9 3" fill="none">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 9 3" fill="none">
                 <rect x="9" width="3" height="9" rx="1" transform="rotate(90 9 0)" fill="white"/>
               </svg>
             </div>
             <div class="faq-content__item-text">Сколько длится консультация?</div>
           </div>
-          <div class="faq-content__item-text answer first hidden">Ответ: 1.</div>
+          <div class="faq-content__item-text answer first hidden">Ответ: без ограничений по времени.</div>
           <div class="faq-content__item">
             <div class="faq-content__item-icon plus" onclick="toggleAnswer(this)">
-              <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 9 9" fill="none">
                 <rect x="3" width="3" height="9" rx="1" fill="white"/>
                 <rect x="9" y="3" width="3" height="9" rx="1" transform="rotate(90 9 3)" fill="white"/>
               </svg>
             </div>
             <div class="faq-content__item-icon minus hidden" onclick="toggleAnswer(this)">
-              <svg xmlns="http://www.w3.org/2000/svg" width="9" height="3" viewBox="0 0 9 3" fill="none">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 9 3" fill="none">
                 <rect x="9" width="3" height="9" rx="1" transform="rotate(90 9 0)" fill="white"/>
               </svg>
             </div>
@@ -228,13 +232,13 @@
           <div class="faq-content__item-text answer second hidden">Ответ: наличный и без наличный расчет.</div>
           <div class="faq-content__item">
             <div class="faq-content__item-icon plus" onclick="toggleAnswer(this)">
-              <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 9 9" fill="none">
                 <rect x="3" width="3" height="9" rx="1" fill="white"/>
                 <rect x="9" y="3" width="3" height="9" rx="1" transform="rotate(90 9 3)" fill="white"/>
               </svg>
             </div>
             <div class="faq-content__item-icon minus hidden" onclick="toggleAnswer(this)">
-              <svg xmlns="http://www.w3.org/2000/svg" width="9" height="3" viewBox="0 0 9 3" fill="none">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 9 3" fill="none">
                 <rect x="9" width="3" height="9" rx="1" transform="rotate(90 9 0)" fill="white"/>
               </svg>
             </div>
@@ -246,34 +250,34 @@
             А если у вас нет времени изучать все самостоятельно и вы хотите делегировать работу с видео, тогда  выбирайте «съемка видео под ключ»</div>
           <div class="faq-content__item">
             <div class="faq-content__item-icon plus" onclick="toggleAnswer(this)">
-              <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 9 9" fill="none">
                 <rect x="3" width="3" height="9" rx="1" fill="white"/>
                 <rect x="9" y="3" width="3" height="9" rx="1" transform="rotate(90 9 3)" fill="white"/>
               </svg>
             </div>
             <div class="faq-content__item-icon minus hidden" onclick="toggleAnswer(this)">
-              <svg xmlns="http://www.w3.org/2000/svg" width="9" height="3" viewBox="0 0 9 3" fill="none">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 9 3" fill="none">
                 <rect x="9" width="3" height="9" rx="1" transform="rotate(90 9 0)" fill="white"/>
               </svg>
             </div>
             <div class="faq-content__item-text">Можем ли мы встретится офлайн?</div>
           </div>
-          <div class="faq-content__item-text answer fourth hidden">Ответ: 4</div>
+          <div class="faq-content__item-text answer fourth hidden">Ответ: да, работа возможна офлайн или онлайн.</div>
           <div class="faq-content__item">
             <div class="faq-content__item-icon plus" onclick="toggleAnswer(this)">
-              <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 9 9" fill="none">
                 <rect x="3" width="3" height="9" rx="1" fill="white"/>
                 <rect x="9" y="3" width="3" height="9" rx="1" transform="rotate(90 9 3)" fill="white"/>
               </svg>
             </div>
             <div class="faq-content__item-icon minus hidden" onclick="toggleAnswer(this)">
-              <svg xmlns="http://www.w3.org/2000/svg" width="9" height="3" viewBox="0 0 9 3" fill="none">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 9 3" fill="none">
                 <rect x="9" width="3" height="9" rx="1" transform="rotate(90 9 0)" fill="white"/>
               </svg>
             </div>
             <div class="faq-content__item-text">Зачем мне развивать аккаунт в Рилс И Тикток?</div>
           </div>
-          <div class="faq-content__item-text answer fifth hidden">Ответ: 5.</div>
+          <div class="faq-content__item-text answer fifth hidden">Ответ: еще не придумала.</div>
         </div>
       </div>
     </section>
