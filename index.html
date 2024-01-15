@@ -14,6 +14,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@400;600;700&family=Montserrat&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
 <body>
   <div class="site-container">
@@ -37,7 +38,11 @@
       <div class="about-container">
         <h2 class="section-title about-title">ОБО МНЕ</h2>
         <div class="about-card">
-            <div class="about-card__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</div>
+            <div class="about-card__text">
+              Блогер с суммарной аудиторией ПОЛМИЛЛИОННА подписчиков во всех соцсетях. Эксперт по reels и tiktok
+              Всю аудиторию набрала благодаря коротким вертикальным видео. Я знаю, как создавать вирусные ролики, которые будут разлетаться по пабликам и набирать миллионные просмотры.
+              За 2,5 года я успела поработать с большим количеством белорусских и иностранных брендов
+            </div>
             <button class="about-card__button">ПОДРОБНЕЕ</button>
         </div>
       </div>
@@ -46,11 +51,51 @@
       <div class="brands-container">
         <h2 class="section-title brands-title">Бренды</h2>
         <div class="brands-logos">
-          <div class="brands-logos__image">
-            <div class="brands-logos__image-container"><img class="brands-logos__item" src="./src/img/dodo-logo.png" alt="Dodo Pizza Logo"></div>
-            <div class="brands-logos__image-container"><img class="brands-logos__item" src="./src/img/mf-logo.png" alt="Mark Formelle Logo"></div>
-            <div class="brands-logos__image-container"><img class="brands-logos__item" src="./src/img/mf-logo.png" alt="Mark Formelle Logo"></div>
-            <div class="brands-logos__image-container"><img class="brands-logos__item" src="./src/img/dodo-logo.png" alt="Dodo Pizza Logo"></div>
+          <div class="marquee-container">
+            <div class="marquee-top">
+              <span class="marquee-top__inner" id="topMarquee">
+                <img class="marquee-item-top" src="./src/img/brand1.png" alt="Brand 1">
+                <img class="marquee-item-top" src="./src/img/brand2.png" alt="Brand 2">
+                <img class="marquee-item-top" src="./src/img/brand3.png" alt="Brand 3">
+                <img class="marquee-item-top" src="./src/img/brand4.png" alt="Brand 4">
+                <img class="marquee-item-top" src="./src/img/brand1.png" alt="Brand 1">
+                <img class="marquee-item-top" src="./src/img/brand2.png" alt="Brand 2">
+                <img class="marquee-item-top" src="./src/img/brand3.png" alt="Brand 3">
+                <img class="marquee-item-top" src="./src/img/brand4.png" alt="Brand 4">
+              </span>
+              <span class="marquee-top__inner" id="topMarquee">
+                <img class="marquee-item-top" src="./src/img/brand1.png" alt="Brand 1">
+                <img class="marquee-item-top" src="./src/img/brand2.png" alt="Brand 2">
+                <img class="marquee-item-top" src="./src/img/brand3.png" alt="Brand 3">
+                <img class="marquee-item-top" src="./src/img/brand4.png" alt="Brand 4">
+                <img class="marquee-item-top" src="./src/img/brand1.png" alt="Brand 1">
+                <img class="marquee-item-top" src="./src/img/brand2.png" alt="Brand 2">
+                <img class="marquee-item-top" src="./src/img/brand3.png" alt="Brand 3">
+                <img class="marquee-item-top" src="./src/img/brand4.png" alt="Brand 4">
+              </span>
+            </div>
+            <div class="marquee-bot">
+              <span class="marquee-bot__inner" id="botMarquee">
+                <img class="marquee-item-bot" src="./src/img/brand5.png" alt="Brand 5">
+                <img class="marquee-item-bot" src="./src/img/brand6.png" alt="Brand 6">
+                <img class="marquee-item-bot" src="./src/img/brand7.png" alt="Brand 7">
+                <img class="marquee-item-bot" src="./src/img/brand8.png" alt="Brand 8">
+                <img class="marquee-item-bot" src="./src/img/brand5.png" alt="Brand 5">
+                <img class="marquee-item-bot" src="./src/img/brand6.png" alt="Brand 6">
+                <img class="marquee-item-bot" src="./src/img/brand7.png" alt="Brand 7">
+                <img class="marquee-item-bot" src="./src/img/brand8.png" alt="Brand 8">
+              </span>
+              <span class="marquee-bot__inner" id="botMarquee">
+                <img class="marquee-item-bot" src="./src/img/brand5.png" alt="Brand 5">
+                <img class="marquee-item-bot" src="./src/img/brand6.png" alt="Brand 6">
+                <img class="marquee-item-bot" src="./src/img/brand7.png" alt="Brand 7">
+                <img class="marquee-item-bot" src="./src/img/brand8.png" alt="Brand 8">
+                <img class="marquee-item-bot" src="./src/img/brand5.png" alt="Brand 5">
+                <img class="marquee-item-bot" src="./src/img/brand6.png" alt="Brand 6">
+                <img class="marquee-item-bot" src="./src/img/brand7.png" alt="Brand 7">
+                <img class="marquee-item-bot" src="./src/img/brand8.png" alt="Brand 8">
+              </span>
+            </div>
           </div>
         </div>
         <div class="brands-empty"></div>
@@ -195,7 +240,10 @@
             </div>
             <div class="faq-content__item-text">Какую услугу мне выбрать?</div>
           </div>
-          <div class="faq-content__item-text answer third hidden">Ответ: 3</div>
+          <div class="faq-content__item-text answer third hidden">Ответ: Зависит от вашего изначального запроса.
+            Если вам нужна просто информация по работе с рилс и тикток - «консультация».
+            Если вы хотите получит информацию и закрепить все на практике с практической отработкой съемок - «менторство» (консультация уже включена в стоимость).
+            А если у вас нет времени изучать все самостоятельно и вы хотите делегировать работу с видео, тогда  выбирайте «съемка видео под ключ»</div>
           <div class="faq-content__item">
             <div class="faq-content__item-icon plus" onclick="toggleAnswer(this)">
               <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none">
