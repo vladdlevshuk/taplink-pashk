@@ -137,11 +137,3 @@ function handleReviewTouchEnd() {
 }
 
 updateReviewPagination();
-
-function redirectToTelegram() {
-  window.location.href = 'https://t.me/yuliyapashk';
-}
-
-function redirectToInstagram() {
-  window.location.href = 'https://www.instagram.com/yuliyapashk/';
-}
