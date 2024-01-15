@@ -120,13 +120,15 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  background: linear-gradient(180deg, #FFF 49.48%, rgba(255, 204, 151, 0.00) 100%);
+  background: linear-gradient(180deg, #FFF 49.48%, #FFF 49.48%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-align: center;
 }
 
 .about-card__button {
+  display: none;
   color: #FFF;
   text-align: center;
   font-family: Montserrat Alternates;
@@ -150,11 +152,11 @@ body {
 
 .brands-logos {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 144px;
+  height: 160px;
   flex-shrink: 0;
   background: linear-gradient(180deg, #000116 0%, rgba(255, 255, 255, 0.52) 46.21%, #000116 100%);
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .brands-logos__image {
@@ -230,7 +232,7 @@ body {
   background-color: rgba(200, 200, 200, 0.2);
   border-radius: 100px;
   border: none;
-  margin: 0 2px;
+  margin: 0 4px;
 }
 
 .pagination button.active,
@@ -648,4 +650,84 @@ body {
 
 .faq-content__item-icon.minus.hidden {
   display: none;
+}
+
+.subscribe-list__item-icon.tiktok,
+.subscribe-list__item-icon.inst {
+  display: flex;
+  align-items: center;
+}
+
+.brands-logos {
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee-top {
+  display: flex;
+  width: 200%;
+  animation: marqueeAnimation 12s linear infinite;
+  justify-content: space-between;
+  width: fit-content;
+}
+
+.marquee-bot {
+  display: flex;
+  width: 200%;
+  animation: marqueeAnimationBot 12s linear infinite;
+  justify-content: space-between;
+  width: fit-content;
+}
+
+.marquee-top__inner {
+  display: flex;
+  width: 100%;
+}
+
+.marquee-bot__inner {
+  display: flex;
+  width: 100%;
+}
+
+.marquee-item-top {
+  height: 70px;
+  margin-right: 20px;
+}
+
+.marquee-item-bot {
+  height: 70px;
+  margin-right: 20px;
+}
+
+
+@keyframes marqueeAnimation {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marqueeAnimationBot {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }
